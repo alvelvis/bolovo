@@ -32,13 +32,13 @@ Além dos artigos jornalísticos, o **bolovo** acrescenta alguns metadados:
 
 # Como usar
 
-Tendo instalado Python 3+, execute o **bolovo**:
+Tendo instalado [Python](https://www.python.org/) 3+, execute o **bolovo**:
 
 	>> bolovo.py
 
 **bolovo** baixará os módulos *newspaper3k*, *bs4* e *GitPython* automaticamente na primeira inicialização.
 
-Alguns comandos serão requisitados ao usuário a cada inicialização:
+Alguns comandos serão requisitados ao usuário:
 
 * Insira o nome do corpus: a pasta onde os artigos serão salvos será criada automaticamente.
 * Alguma observação? Por exemplo: "busca pelos termos 'x e y'"
