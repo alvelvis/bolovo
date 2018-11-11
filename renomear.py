@@ -10,7 +10,7 @@ if diretorio == 'exit': exit()
 novonome = input('\nOs arquivos receberão um nome e uma numeração. Que nome você deseja que os arquivos recebam?\n')
 while novonome.strip() == '':
 	novonome = input('\nOs arquivos receberão um nome e uma numeração. Que nome você deseja que os arquivos recebam?\n')
-if novonome == 'exit': exit()
+if novonome == 'exit': exit() 
 
 arquivos = os.listdir(diretorio)
 

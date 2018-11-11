@@ -12,6 +12,8 @@ try:
 except:
 	from pip import main as pipmain
 	pipmain(['install','newspaper3k'])
+	import nltk
+	nltk.download('punkt')
 	from newspaper import Article
 
 #Tenta importar o módulo BeautifulSoup (que extrai os links)
@@ -153,7 +155,7 @@ def extract_articles():
 				for linha in linkscopy:
 					if linha != "":
 						novolinks = novolinks + linha + "\n"
-				
+
 				arq = open("links"+corpus+".txt","w")
 				arq.write(novolinks)
 				arq.close()
@@ -237,7 +239,7 @@ def Vai(url):
 				link_http = tag.get('href').split('u=')[1].split('&t')[0].split('&k')[0].replace('%2F','/').replace('%3A',':') #
 				seen.add(link_http)
 				links = links + link_http + "\n"
-				print("NOVIDADE: " + link_http)			
+				print("NOVIDADE: " + link_http)
 
 		#Carrega a lista de links
 		if os.path.isfile("links"+corpus+".txt"):
@@ -337,7 +339,7 @@ maxrepet = maxrepetition
 if 'oglobo' in corpus: expression = 'u='
 elif 'extra' in corpus: expression = 'u='
 elif 'g1' in corpus: expression = 'u='
-else: expression = 'IMPOSSÍVEL'
+else: exit()
 
 #Efetivamente, pede os termos de busca
 termo()
