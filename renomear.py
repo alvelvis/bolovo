@@ -5,10 +5,12 @@ import os
 diretorio = input('Deseja renomear os arquivos de qual pasta?\n').replace('"','')
 while not os.path.isdir(diretorio):
 	diretorio = input('\nDeseja renomear os arquivos de qual pasta?\n').replace('"','')
+if diretorio == 'exit': exit()
 
 novonome = input('\nOs arquivos receberão um nome e uma numeração. Que nome você deseja que os arquivos recebam?\n')
 while novonome.strip() == '':
 	novonome = input('\nOs arquivos receberão um nome e uma numeração. Que nome você deseja que os arquivos recebam?\n')
+if novonome == 'exit': exit()
 
 arquivos = os.listdir(diretorio)
 

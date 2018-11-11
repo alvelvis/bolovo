@@ -163,10 +163,12 @@ corpus = ""
 while corpus.strip() == "":
 	print("Insira o nome do Corpus (é necessário ter 'oglobo|extra|g1' no final):")
 	corpus = input()
+if corpus == 'exit': exit()
 print("")
 #Pede alguma observação (opcional)
 print("Alguma observação? (deixe em branco caso não)")
 obs = input()
+if obs == 'exit': exit()
 
 #Função que retira os links de uma página específica
 #Os comentários são de uma página de ajuda
@@ -256,6 +258,7 @@ def termo():
 	termo = input('\nTermo de busca:\n')
 	while termo == '':
 		termo = input('\nTermo de busca:\n')
+	if termo == 'exit': exit()
 	termobusca = str()
 	for palavra in termo.split():
 		termobusca = termobusca + palavra + '+'
