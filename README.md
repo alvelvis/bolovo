@@ -1,6 +1,6 @@
 # Salvar matérias de jornais em arquivos de texto
 
-**bolovo** salva matérias de Jornais em arquivos de texto. Além do corpo do texto, alguns metadados também são acrescidos ao arquivo. O robô busca por links de matérias a partir de termos de busca escolhidos pelo usuário. Ele, então, navega por 50 páginas de busca utilizando o termo de busca e salva os links para, posteriormente, baixar os artigos correspondentes.
+**bolovo** salva matérias de jornais em arquivos de texto. Além do corpo do texto, alguns metadados também são acrescidos ao arquivo. O robô busca por links de matérias a partir de termos de busca escolhidos pelo usuário. Ele, então, navega por 50 páginas de busca utilizando o termo de busca e salva os links para, posteriormente, baixar os artigos correspondentes.
 
 **bolovo**, diferente de outros robôs, é inteligente e procura por novas versões automaticamente.
 
