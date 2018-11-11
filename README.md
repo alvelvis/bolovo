@@ -32,7 +32,7 @@ Além dos artigos jornalísticos, o **bolovo** acrescenta alguns metadados:
 
 # Como usar
 
-Tendo instalado [Python](https://www.python.org/) 3+, execute o **bolovo**:
+Tendo instalado o *[Python 3+](https://www.python.org/)*, execute o **bolovo**:
 
 	>> bolovo.py
 
