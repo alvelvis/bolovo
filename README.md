@@ -1,8 +1,6 @@
 # Salvar matérias de jornais em arquivos de texto
 
-**bolovo** salva matérias de jornais do Brasil em arquivos de texto. Além do corpo do texto, alguns metadados também são acrescidos ao arquivo.
-
-**bolovo** busca por links de matérias a partir de termos de busca escolhidos pelo usuário. O robô, então, navega por 50 páginas de busca utilizando o termo de busca e salva os links para, posteriormente, baixar os artigos correspondentes.
+**bolovo** salva matérias de Jornais em arquivos de texto. Além do corpo do texto, alguns metadados também são acrescidos ao arquivo. O robô busca por links de matérias a partir de termos de busca escolhidos pelo usuário. Ele, então, navega por 50 páginas de busca utilizando o termo de busca e salva os links para, posteriormente, baixar os artigos correspondentes.
 
 **bolovo**, diferente de outros robôs, é inteligente e procura por novas versões automaticamente.
 
@@ -39,6 +37,8 @@ Tendo instalado Python 3+, execute o **bolovo**:
 	>> bolovo.py
 
 **bolovo** baixará os módulos *newspaper3k*, *bs4* e *GitPython* automaticamente na primeira inicialização.
+
+Alguns comandos serão requisitados ao usuário a cada inicialização:
 
 * Insira o nome do corpus: a pasta onde os artigos serão salvos será criada automaticamente.
 * Alguma observação? Por exemplo: "busca pelos termos 'x e y'"
