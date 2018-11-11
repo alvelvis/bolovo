@@ -44,4 +44,4 @@ Alguns comandos serão requisitados ao usuário:
 * Alguma observação? Por exemplo: "busca pelos termos 'x e y'"
 * Insira os termos de busca: note que termos diferentes podem dar resultados diferentes.
 * Aguarde...
-* Ao término, será requisitado outro de termo de busca. As pesquisas com esse novo termo serão salvas com os mesmos metadados.
+* Ao término, será requisitado outro termo de busca. As pesquisas com esse novo termo serão salvas com os mesmos metadados.
