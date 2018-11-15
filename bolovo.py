@@ -38,13 +38,13 @@ except:
 
 #Tenta importar o módulo git (que atualiza o bolovo)
 def atualizar():
-    try:
-	    from git import Git
-    except:
-	    from pip import main as pipmain
-	    pipmain(['install','GitPython'])
-	    print('GitPython instalado com sucesso!')
-	    exit()
+	try:
+		from git import Git
+	except:
+		from pip import main as pipmain
+		pipmain(['install','GitPython'])
+		print('GitPython instalado com sucesso!')
+		exit()
 	finally:
 	    if os.path.isdir('.git'):
 		    Git().pull()
@@ -53,8 +53,8 @@ def atualizar():
 		    Git().remote('add','origin','https://github.com/alvelvis/bolovo.git')
 		    Git().fetch()
 		    Git().checkout('master')
-		    
-if sys.argv[1] == '--atualizar':
+
+if len(sys.argv) == 2 and sys.argv[1] == '--atualizar':
     atualizar()
     print('Atualizado com sucesso!')
     exit()
