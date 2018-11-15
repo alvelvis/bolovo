@@ -2,7 +2,7 @@
 
 **bolovo** salva matérias de jornais em arquivos de texto.
 
-**bolovo**, diferente de outros robôs, é inteligente e procura por novas versões automaticamente.
+**bolovo**, diferente de outros robôs, é inteligente e procura por novas versões ao utilizar o parâmetro *--atualizar* .
 
 * [Metadados](#Metadados)
 * [Como usar](#Como-usar)
@@ -25,7 +25,7 @@ Tendo instalado o *[Python 3+](https://www.python.org/)* e o *python3-pip* , exe
 
 	>> python3 bolovo.py
 
-**bolovo** baixará os módulos *newspaper3k*, *bs4* e *GitPython* automaticamente na primeira inicialização.
+**bolovo** baixará os módulos *nltk*, *newspaper3k* e *bs4* automaticamente na primeira inicialização.
 
 Alguns comandos serão requisitados ao usuário:
 

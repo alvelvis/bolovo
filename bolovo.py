@@ -5,6 +5,16 @@ import requests
 import re
 import random
 import os
+import sys
+
+#Tenta importar o módulo Nltk
+try:
+	import nltk
+except:
+	from pip import main as pipmain
+	pipmain(['install','nltk'])
+	print('1/3 Nltk instalado com sucesso!')
+	exit()
 
 #Tenta importar o módulo Newspaper (que extrai os artigos)
 try:
@@ -14,7 +24,8 @@ except:
 	pipmain(['install','newspaper3k'])
 	import nltk
 	nltk.download('punkt')
-	from newspaper import Article
+	print('2/3 Newspaper3k instalado com sucesso!')
+	exit()
 
 #Tenta importar o módulo BeautifulSoup (que extrai os links)
 try:
@@ -22,24 +33,31 @@ try:
 except:
 	from pip import main as pipmain
 	pipmain(['install','bs4'])
-	from bs4 import BeautifulSoup
+	print('3/3 BeautifulSoup instalado com sucesso!')
+	exit()
 
 #Tenta importar o módulo git (que atualiza o bolovo)
-try:
-	from git import Git
-except:
-	from pip import main as pipmain
-	pipmain(['install','GitPython'])
-	from git import Git
-finally:
-	if os.path.isdir('.git'):
-		Git().pull()
-	else:
-		Git().init()
-		Git().remote('add','origin','https://github.com/alvelvis/bolovo.git')
-		Git().fetch()
-		Git().checkout('master')
-
+def atualizar():
+    try:
+	    from git import Git
+    except:
+	    from pip import main as pipmain
+	    pipmain(['install','GitPython'])
+	    print('GitPython instalado com sucesso!')
+	    exit()
+	finally:
+	    if os.path.isdir('.git'):
+		    Git().pull()
+	    else:
+		    Git().init()
+		    Git().remote('add','origin','https://github.com/alvelvis/bolovo.git')
+		    Git().fetch()
+		    Git().checkout('master')
+		    
+if sys.argv[1] == '--atualizar':
+    atualizar()
+    print('Atualizado com sucesso!')
+    exit()
 
 #Cria as listas de links "já vistos": aqueles que já foram baixados e não devem ser baixados novamente
 seen = set()
