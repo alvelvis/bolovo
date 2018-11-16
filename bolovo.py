@@ -52,6 +52,9 @@ def atualizar():
 		    Git().init()
 		    Git().remote('add','origin','https://github.com/alvelvis/bolovo.git')
 		    Git().fetch()
+		    if os.path.isfile('bolovo.py'): os.remove('bolovo.py')
+		    if os.path.isfile('renomear.py'): os.remove('renomear.py')
+		    if os.path.isfile('README.md'): os.remove('README.md')
 		    Git().checkout('master')
 
 if len(sys.argv) == 2 and sys.argv[1] == '--atualizar':
