@@ -7,7 +7,7 @@
 * [Metadados](#Metadados)
 * [Como usar](#Como-usar)
 * [renomear.py](#renomearpy)
-* [pós-processamento.py](#pos-processamentopy)
+* [pós-processamento.py](#pós-processamentopy)
 
 # Metadados
 
@@ -43,11 +43,11 @@ Caso os nomes dos arquivos gerados pelo **bolovo** sejam grandes demais, você p
 
 Exemplo:
 
-FSP-1
-FSP-2
-FSP-3
-FSP-4
-...
+>FSP-1
+>FSP-2
+>FSP-3
+>FSP-4
+>...
 
 # pós-processamento.py
 
