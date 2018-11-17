@@ -61,8 +61,8 @@ As regras de pós-processamento são as seguintes:
 
 1) Excluir as linhas de texto que sigam uma das expressões regulares:
 
-	^[^a-záéíóúãẽĩõũàèìòùâêîôû]+$
+	expressão: ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+$
 	exemplo: AMEAÇA A EX-ESTRATEGISTA
 
-	^[^a-záéíóúãẽĩõũàèìòùâêîôû]+?\s?[:]
+	expressão: ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+?\s?[:]
 	exemplo: LEIA: Geraldo Alckmin garante o maior tempo de televisão
