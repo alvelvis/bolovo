@@ -64,5 +64,6 @@ As regras de pós-processamento são as seguintes:
 	expressão: ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+$
 	exemplo: AMEAÇA A EX-ESTRATEGISTA
 
+
 	expressão: ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+?\s?[:]
 	exemplo: LEIA: Geraldo Alckmin garante o maior tempo de televisão
