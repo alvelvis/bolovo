@@ -59,11 +59,10 @@ Código para ajustar os arquivos de texto gerados pelo **bolovo** dentro de uma 
 
 As regras de pós-processamento são as seguintes:
 
-1) Excluir as linhas de texto que sigam uma das expressões regulares:
+Regra 1) Excluir as linhas de texto que sigam uma das expressões regulares:
 
 	expressão: ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+$
 	exemplo: AMEAÇA A EX-ESTRATEGISTA
-
 
 	expressão: ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+?\s?[:]
 	exemplo: LEIA: Geraldo Alckmin garante o maior tempo de televisão
