@@ -6,6 +6,8 @@
 
 * [Metadados](#Metadados)
 * [Como usar](#Como-usar)
+* [renomear.py](#renomearpy)
+* [pós-processamento.py](#pos-processamentopy)
 
 # Metadados
 
@@ -34,3 +36,29 @@ Alguns comandos serão requisitados ao usuário:
 * Insira os termos de busca: note que termos diferentes podem dar resultados diferentes.
 * Aguarde...
 * Ao término, será requisitado outro termo de busca. As pesquisas com esse novo termo serão salvas com os mesmos metadados.
+
+# renomear.py
+
+Caso os nomes dos arquivos gerados pelo **bolovo** sejam grandes demais, você pode renomeá-los seguindo uma sigla e uma numeração.
+
+Exemplo:
+
+FSP-1
+FSP-2
+FSP-3
+FSP-4
+...
+
+# pós-processamento.py
+
+Código para ajustar os arquivos de texto gerados pelo **bolovo** dentro de uma determinada pasta.
+
+As regras de pós-processamento são as seguintes:
+
+1) Excluir as linhas de texto que sigam uma das expressões regulares:
+
+    ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+$
+    exemplo: AMEAÇA A EX-ESTRATEGISTA
+
+    ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+?\s?[:]
+    exemplo: LEIA: Geraldo Alckmin garante o maior tempo de televisão

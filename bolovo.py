@@ -55,6 +55,7 @@ def atualizar():
 		    if os.path.isfile('bolovo.py'): os.remove('bolovo.py')
 		    if os.path.isfile('renomear.py'): os.remove('renomear.py')
 		    if os.path.isfile('README.md'): os.remove('README.md')
+		    if os.path.isfile('pós_processamento.py'): os.remove('pós_processamento.py')
 		    Git().checkout('master')
 
 if len(sys.argv) == 2 and sys.argv[1] == '--atualizar':
