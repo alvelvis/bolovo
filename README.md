@@ -44,9 +44,13 @@ Caso os nomes dos arquivos gerados pelo **bolovo** sejam grandes demais, você p
 Exemplo:
 
 >FSP-1
+
 >FSP-2
+
 >FSP-3
+
 >FSP-4
+
 >...
 
 # pós-processamento.py
@@ -57,8 +61,8 @@ As regras de pós-processamento são as seguintes:
 
 1) Excluir as linhas de texto que sigam uma das expressões regulares:
 
-    ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+$
-    exemplo: AMEAÇA A EX-ESTRATEGISTA
+	^[^a-záéíóúãẽĩõũàèìòùâêîôû]+$
+	exemplo: AMEAÇA A EX-ESTRATEGISTA
 
-    ^[^a-záéíóúãẽĩõũàèìòùâêîôû]+?\s?[:]
-    exemplo: LEIA: Geraldo Alckmin garante o maior tempo de televisão
+	^[^a-záéíóúãẽĩõũàèìòùâêîôû]+?\s?[:]
+	exemplo: LEIA: Geraldo Alckmin garante o maior tempo de televisão
