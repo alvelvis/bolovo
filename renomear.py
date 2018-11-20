@@ -19,6 +19,6 @@ print('\nAguarde...\n')
 for i,arquivo in enumerate(arquivos):
 	if os.path.isfile(diretorio + '/' + arquivo):
 		texto = open(diretorio + '/' + arquivo, 'r').read()
-		print('(' + str(i) + '/' + str(len(arquivos)) + ') ' + arquivo)
+		print('(' + str(i+1) + '/' + str(len(arquivos)) + ') ' + arquivo)
 		os.remove(diretorio + '/' + arquivo)
-									open(diretorio + '/' + novonome + '-' + str(i) + '.txt', 'w').write('#-ID: ' + novonome + '-' + str(i) + '\n' + texto)
+		open(diretorio + '/' + novonome + '-' + str(i+1) + '.txt', 'w').write('#-ID: ' + novonome + '-' + str(i+1) + '\n' + texto)
