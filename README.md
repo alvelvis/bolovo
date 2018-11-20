@@ -7,7 +7,7 @@
 * [Metadados](#Metadados)
 * [Como usar](#Como-usar)
 * [renomear.py](#renomearpy)
-* [pós-processamento.py](#pós-processamentopy)
+* [pós_processamento.py](#pós_processamentopy)
 
 # Metadados
 
@@ -56,7 +56,7 @@ Exemplo:
 
 >...
 
-# pós-processamento.py
+# pós_processamento.py
 
 Código para ajustar os arquivos de texto gerados pelo **bolovo** dentro de uma determinada pasta.
 

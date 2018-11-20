@@ -49,14 +49,14 @@ def atualizar():
 	    if os.path.isdir('.git'):
 		    import shutil
 		    shutil.rmtree('.git')
-		    Git().init()
-		    Git().remote('add','origin','https://github.com/alvelvis/bolovo.git')
-		    Git().fetch()
-		    if os.path.isfile('bolovo.py'): os.remove('bolovo.py')
-		    if os.path.isfile('renomear.py'): os.remove('renomear.py')
-		    if os.path.isfile('README.md'): os.remove('README.md')
-		    if os.path.isfile('pós_processamento.py'): os.remove('pós_processamento.py')
-		    Git().checkout('master')
+	    Git().init()
+	    Git().remote('add','origin','https://github.com/alvelvis/bolovo.git')
+	    Git().fetch()
+	    if os.path.isfile('bolovo.py'): os.remove('bolovo.py')
+	    if os.path.isfile('renomear.py'): os.remove('renomear.py')
+	    if os.path.isfile('README.md'): os.remove('README.md')
+	    if os.path.isfile('pós_processamento.py'): os.remove('pós_processamento.py')
+	    Git().checkout('master')
 
 if len(sys.argv) == 2 and sys.argv[1] == '--atualizar':
     atualizar()
@@ -122,7 +122,6 @@ def extract_articles():
 									+ "\n" + "#-Observações: " + obs
 									+ "\n\n" + article.text
 									)
-								print(url.split('/', 3)[3].rsplit('/',1)[0])
 								#Salva o arquivo de texto
 								if not os.path.exists(corpus): os.mkdir(corpus)
 								arq = open(corpus+"/"+slugify(article.title)+".txt","w",encoding="utf-8")
