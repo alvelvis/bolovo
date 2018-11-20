@@ -16,10 +16,11 @@ Além dos artigos jornalísticos, o **bolovo** acrescenta alguns metadados:
 * Nome do corpus (nome da pasta (escolhido pelo usuário))
 * Data de publicação
 * Data de adição ao corpus
-* Fonte
-* Observações (a critério do usuário)
 * Título
 * Autores
+* Tipo (categoria do jornal em que aparece)
+* Fonte
+* Observações (a critério do usuário)
 
 # Como usar
 
@@ -36,6 +37,8 @@ Alguns comandos serão requisitados ao usuário:
 * Insira os termos de busca: note que termos diferentes podem dar resultados diferentes.
 * Aguarde...
 * Ao término, será requisitado outro termo de busca. As pesquisas com esse novo termo serão salvas com os mesmos metadados.
+
+Note que **bolovo** não baixará novamente, na mesma pasta, textos que já tenham sido baixados anteriormente.
 
 # renomear.py
 

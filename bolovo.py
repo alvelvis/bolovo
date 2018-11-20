@@ -47,8 +47,8 @@ def atualizar():
 		exit()
 	finally:
 	    if os.path.isdir('.git'):
-		    Git().pull()
-	    else:
+		    import shutil
+		    shutil.rmtree('.git')
 		    Git().init()
 		    Git().remote('add','origin','https://github.com/alvelvis/bolovo.git')
 		    Git().fetch()
@@ -115,12 +115,14 @@ def extract_articles():
 								texto = ("#-Corpus: " + corpus
 									+ "\n" + "#-Data de publicação: " + str(article.publish_date)
 									+ "\n" + "#-Data de adição ao corpus: " + datahoje
-									+ "\n" + "#-Fonte: " + url
-									+ "\n" + "#-Observações: " + obs
 									+ "\n" + "#-Título: " + article.title
 									+ "\n" + "#-Autores: " + str(article.authors)
+									+ "\n" + "#-Tipo: " + url.split('/', 3)[3].rsplit('/',1)[0]
+									+ "\n" + "#-Fonte: " + url
+									+ "\n" + "#-Observações: " + obs
 									+ "\n\n" + article.text
 									)
+								print(url.split('/', 3)[3].rsplit('/',1)[0])
 								#Salva o arquivo de texto
 								if not os.path.exists(corpus): os.mkdir(corpus)
 								arq = open(corpus+"/"+slugify(article.title)+".txt","w",encoding="utf-8")
@@ -342,10 +344,6 @@ def busca():
 				print(">>>> PROCURANDO ("+str(repetidos)+"/"+str(maxrepet)+")")
 		else:
 			print('Nenhuma novidade na página :(')
-			if 'oglobo' in corpus:
-				obs = obs + '; Tipo: Notícias; '
-			if 'extra' in corpus:
-				obs = obs + '; Tipo: Notícias; '
 			extract_articles()
 			termo()
 
