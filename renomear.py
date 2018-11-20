@@ -10,7 +10,7 @@ if diretorio == 'exit': exit()
 novonome = input('\nOs arquivos receberão um nome e uma numeração. Que nome você deseja que os arquivos recebam?\n')
 while novonome.strip() == '':
 	novonome = input('\nOs arquivos receberão um nome e uma numeração. Que nome você deseja que os arquivos recebam?\n')
-if novonome == 'exit': exit() 
+if novonome == 'exit': exit()
 
 arquivos = os.listdir(diretorio)
 
@@ -21,4 +21,4 @@ for i,arquivo in enumerate(arquivos):
 		texto = open(diretorio + '/' + arquivo, 'r').read()
 		print('(' + str(i) + '/' + str(len(arquivos)) + ') ' + arquivo)
 		os.remove(diretorio + '/' + arquivo)
-		open(diretorio + '/' + novonome + '-' + str(i) + '.txt', 'w').write(texto)
+									open(diretorio + '/' + novonome + '-' + str(i) + '.txt', 'w').write('#-ID: ' + novonome + '-' + str(i) + '\n' + texto)
