@@ -186,7 +186,7 @@ def extract_articles():
 #Pede o nome do corpus e dá a lista de opções disponíveis
 corpus = ""
 while corpus.strip() == "":
-	print("Insira o nome do Corpus (é necessário ter 'oglobo|extra|g1' no final):")
+	print("Insira o nome do Corpus (é necessário ter 'oglobo|extra|g1' no nome):")
 	corpus = input()
 if corpus == 'exit': exit()
 print("")

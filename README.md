@@ -18,7 +18,7 @@ Além dos artigos jornalísticos, o **bolovo** acrescenta alguns metadados:
 * Data de adição ao corpus
 * Título
 * Autores
-* Seção (categoria do jornal em que aparece)
+* Seção (categoria do jornal em que aparece (tudo entre a terceira e a última barra do link, por exemplo: http://meujornal.com/**SEÇÃO/DOS/TOMATES**/notícia.html))
 * Fonte
 * Observações (a critério do usuário)
 
