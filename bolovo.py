@@ -112,14 +112,14 @@ def extract_articles():
 						else:
 							if True:
 								#Adiciona o cabeçalho dos arquivos de texto
-								texto = ("#-Corpus: " + corpus
-									+ "\n" + "#-Data de publicação: " + str(article.publish_date)
-									+ "\n" + "#-Data de adição ao corpus: " + datahoje
-									+ "\n" + "#-Título: " + article.title
-									+ "\n" + "#-Autores: " + str(article.authors)
-									+ "\n" + "#-Seção: " + url.split('/', 3)[3].rsplit('/',1)[0]
-									+ "\n" + "#-Fonte: " + url
-									+ "\n" + "#-Observações: " + obs
+								texto = ("# Corpus = " + corpus
+									+ "\n" + "# Data de publicação = " + str(article.publish_date)
+									+ "\n" + "# Data de adição ao corpus = " + datahoje
+									+ "\n" + "# Título = " + article.title
+									+ "\n" + "# Autores = " + str(article.authors)
+									+ "\n" + "# Seção = " + url.split('/', 3)[3].rsplit('/',1)[0]
+									+ "\n" + "# Fonte = " + url
+									+ "\n" + "# Observações = " + obs
 									+ "\n\n" + article.text
 									)
 								#Salva o arquivo de texto

@@ -21,4 +21,4 @@ for i,arquivo in enumerate(arquivos):
 		texto = open(diretorio + '/' + arquivo, 'r').read()
 		print('(' + str(i+1) + '/' + str(len(arquivos)) + ') ' + arquivo)
 		os.remove(diretorio + '/' + arquivo)
-		open(diretorio + '/' + novonome + '-' + str(i+1) + '.txt', 'w').write('#-ID: ' + novonome + '-' + str(i+1) + '\n' + texto)
+		open(diretorio + '/' + novonome + '-' + str(i+1) + '.txt', 'w').write('# ID = ' + novonome + '-' + str(i+1) + '\n' + texto)
